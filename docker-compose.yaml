@@ -1,0 +1,13 @@
+# Restart after updates
+#    $ git pull
+#    $ docker-compose up --build
+#
+version: '3.7'
+
+services:
+  simple-peer:
+    build:
+      context: .
+    ports:
+      - 3030:3030
+    restart: unless-stopped
