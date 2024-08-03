@@ -38,6 +38,8 @@ var peer = new Peer({
       // { url: 'stun:stun.xten.com' },
       {
         url: `turn:${location.host}`,
+        username: 'webrtc',
+        credential: 'v3754hM6H8SncFmT'
       }
       //{
       //   url: 'turn:192.158.29.39:3478?transport=udp',
