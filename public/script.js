@@ -22,8 +22,8 @@ showChat.addEventListener("click", () => {
 const user = prompt("Enter your name");
 
 var peer = new Peer({
-  host: '127.0.0.1',
-  port: 3030,
+  host: location.hostname,
+  port: location.port,
   path: '/peerjs',
   config: {
     'iceServers': [
